@@ -2,7 +2,17 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-size-66">
-        <edit-profile-form data-background-color="green"> </edit-profile-form>
+        <md-card>
+          <md-card-header>
+            <md-card-header-text>
+              Simple Table (08)
+            </md-card-header-text>
+
+          </md-card-header>
+          <md-card-content>
+            <simple-table table-header-color="green"></simple-table>
+          </md-card-content>
+        </md-card>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
         <user-card> </user-card>
@@ -12,12 +22,13 @@
 </template>
 
 <script>
-import { EditProfileForm, UserCard } from "@/pages";
+import {  UserCard } from "@/pages";
+import { SimpleTable } from '@/components';
 
 export default {
   components: {
-    EditProfileForm,
-    UserCard
+    UserCard,
+    SimpleTable
   }
 };
 </script>
