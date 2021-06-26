@@ -1,14 +1,12 @@
 <template>
   <div class="content">
     <div class="md-layout">
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100"
-      >
+      <div class="md-layout-item md-medium-size-100 md-size-66">
         <md-card>
           <md-card-header>
-                <md-card-header-text>
-                  Simple Table
-                </md-card-header-text>
+            <md-card-header-text>
+              Teachers (08)
+            </md-card-header-text>
 
           </md-card-header>
           <md-card-content>
@@ -16,16 +14,21 @@
           </md-card-content>
         </md-card>
       </div>
-
+      <div class="md-layout-item md-medium-size-100 md-size-33">
+        <user-card> </user-card>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { SimpleTable } from "@/components";
+import {  UserCard } from "@/pages";
+import { SimpleTable } from '@/components';
 
 export default {
+  name: "TeacherList",
   components: {
+    UserCard,
     SimpleTable
   }
 };

@@ -1,0 +1,201 @@
+body {
+  background-color: white !important;
+}
+.md-toolbar-custom {
+  box-shadow: 0 5px 5px #f1eaea !important;
+}
+
+.md-input {
+  border: 1px solid rgb(210, 210, 210) !important;
+}
+
+.md-select {
+  border: 1px solid rgb(210, 210, 210) !important;
+}
+
+.md-field label {
+  margin-left: 0.2rem !important;
+}
+.main-action-button {
+  color: #f18484 !important;
+  background-color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-left: 10%;
+  padding-top: 0.3rem;
+
+}
+
+.cancel-action-button {
+  color: #fd3e3e !important;
+  background-color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-right: 20%;
+  padding-top: 0.3rem;
+
+}
+
+.profile-name-label {
+  padding-left: 1rem;
+}
+
+.main-action-button .cancel-action-button :hover,
+.main-action-button .cancel-action-button :focus {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+
+.vertical-divider {
+  background: #e0e0e0;
+  border: 0;
+  display: inline-block;
+  height: 140%;
+  width: 1px;
+  padding: 0;
+}
+
+.vertical-divider-no-height {
+  background: #e0e0e0;
+  border: 0;
+  width: 1px;
+  padding: 0;
+}
+
+.lore-button {
+  width: 100%;
+  background-image: linear-gradient(to right,#fdcc8b, #f18197);
+}
+
+
+.wrapper .sidebar:after, .wrapper .off-canvas-sidebar:after {
+  background-color: white !important;
+}
+
+.wrapper .sidebar .nav .router-link-active p, .wrapper .off-canvas-sidebar .nav .router-link-active p {
+  color: #ee6d6d !important;
+}
+.wrapper .sidebar .nav li a, .wrapper .off-canvas-sidebar .nav li a {
+  color: #191919 !important;
+}
+.wrapper .sidebar .md-icon.md-theme-default.md-icon-font, .wrapper .sidebar .material-icons,
+.wrapper .off-canvas-sidebar .md-icon.md-theme-default.md-icon-font, .wrapper .off-canvas-sidebar .material-icons {
+  color: #1d1b1b !important;
+  opacity: 0.8;
+}
+
+
+
+.app-logo {
+  z-index: 4;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box img {
+  width: 100px;
+  height: 100px;
+}
+
+.box-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card-custom {
+  max-width: 25%;
+
+}
+
+// mobile phones
+@media screen and (max-width: 480px) {
+  .login-card-custom {
+    max-width: 80%;
+  }
+}
+
+// tablets
+@media screen and (max-width: 768px) {
+  .login-card-custom {
+    max-width: 50%;
+  }
+}
+
+
+// table items
+.table-items-with-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+}
+.table-items-with-avatar label {
+  padding-left: 1rem;
+}
+.md-card .md-card-header {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+
+}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-left: auto;
+}
+
+.pagination div {
+  margin-right: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.selected {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.edit {
+  color :#fdc682 !important;
+}
+
+.delete {
+  color : #fa6a53 !important;
+}
+
+
+.card-form{
+  background-color: gray !important;
+  color: white !important;
+
+  input {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
+.card-form-header {
+  background-color: gray !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}

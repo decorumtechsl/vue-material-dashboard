@@ -1,33 +1,29 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
-import UserProfile from "@/pages/UserProfile.vue";
-import TableList from "@/pages/TableList.vue";
+
+import Login from "@/pages/Auth/Login.vue";
+import Student from "@/pages/Students/List";
+import Teacher from "@/pages/Teachers/List";
 
 const routes = [
   {
+    path: "/login",
+    component: Login,
+  },
+  {
     path: "/",
     component: DashboardLayout,
-    redirect: "/user",
     children: [
-      {
-        path: "user",
-        name: "User Profile",
-        component: UserProfile
-      },
-      {
-        path: "table",
-        name: "Table List",
-        component: TableList
-      },
+
       {
         path: "teachers",
         name: "Teachers",
-        component: UserProfile
+        component: Teacher
       },
       {
         path: "students",
         name: "Students",
-        component: UserProfile
+        component: Student
       }
     ]
   }

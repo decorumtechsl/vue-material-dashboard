@@ -2,19 +2,7 @@
   <div
     class="sidebar"
   >
-    <div class="logo">
-      <a href="#" class="simple-text logo-mini">
-        <div class="logo-img">
-          <img :src="imgLogo" alt="" />
-        </div>
-      </a>
-
-      <a
-        href="#"
-        target="_blank"
-        class="simple-text logo-normal"
-      >Lore Strong Bond</a>
-    </div>
+    <app-logo />
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
       <md-list class="nav">

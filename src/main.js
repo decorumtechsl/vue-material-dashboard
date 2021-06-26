@@ -9,14 +9,16 @@ import routes from "./routes/routes";
 import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
 
+import store from "@/store/store";
+
 import MaterialDashboard from "./material-dashboard";
 
 // configure router
 const router = new VueRouter({
+  mode: "history",
   routes, // short for routes: routes
   linkExactActiveClass: "nav-item active"
 });
-
 
 Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
@@ -29,4 +31,5 @@ new Vue({
   el: "#app",
   render: h => h(App),
   router,
+  store:store
 });
